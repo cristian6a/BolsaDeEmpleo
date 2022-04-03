@@ -168,6 +168,6 @@ public class Aspirante {
      * @return Información del aspirante en una cadena con el formato "<nombre> - <profesion>"
      */
     public String toString() {
-        return nombre + " - " + profesion;
+        return nombre + " - " + profesion + " - " + edad + " - " + aniosExperiencia;
     }
 }

@@ -108,18 +108,19 @@ public class BolsaDeEmpleo {
         Aspirante temp;
         int n = aspirantes.size();
         // ir moviendo uno a uno el límite del sub-array no ordenado
-        for (int i = 0; i < n - 1; i++){
+        for (int i = 0; i < n-1; i++){
             //Encontrar el mínimo elemento en el array sin ordenar
             int min_idx = i;
-            for (int j = i + 1; j < n; j++){
-                if (aspirantes.get(j).darEdad() < aspirantes.get(min_idx).darEdad()){
+
+            for (int j = i + 1; j < n; j++) {
+                if (aspirantes.get(j).darEdad() < aspirantes.get(min_idx).darEdad())
                     min_idx = j;
-                }
-                //Intercambiar el mínimo encontrado con el primer elemento
-                temp = aspirantes.get(min_idx);
-                aspirantes.set(min_idx, aspirantes.get(i));
-                aspirantes.set(i, temp);
-            }
+            } // el haber puesto esta indentación en la línea 123 me costó horas de trabajo ":'D"
+                //Intercambiar el mínimo encontrado en la nueva posición
+            temp = aspirantes.get(min_idx);
+            aspirantes.set(min_idx, aspirantes.get(i));
+            aspirantes.set(i, temp);
+
         }
 
     }
