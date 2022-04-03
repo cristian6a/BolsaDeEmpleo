@@ -115,7 +115,7 @@ public class BolsaDeEmpleo {
             for (int j = i + 1; j < n; j++) {
                 if (aspirantes.get(j).darEdad() < aspirantes.get(min_idx).darEdad())
                     min_idx = j;
-            } // el haber puesto esta indentación en la línea 123 me costó horas de trabajo ":'D"
+            } // el haber puesto esta llave en la línea 123 me costó horas de trabajo ":'D"
                 //Intercambiar el mínimo encontrado en la nueva posición
             temp = aspirantes.get(min_idx);
             aspirantes.set(min_idx, aspirantes.get(i));
